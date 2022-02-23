@@ -8,9 +8,6 @@ const io = require('socket.io')(server, {
       },
 });
 
-var players = {};
-var sockets = {};
-
 io.on("connection", (socket) => {
     console.log("Socket: ", socket);
     console.log("Socket is active to be connected");
